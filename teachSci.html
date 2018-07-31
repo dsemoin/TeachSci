@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8" />
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>TeachSci</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" href="mystyle.css"> -->
+    <link href="form.html">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
@@ -24,15 +24,16 @@
             <ul class="navbar-nav">
                     
                 <li class="nav-item active">
-                    <a class="nav-link" id="register" href="#">Register
+                    <a class="nav-link" id="register" href="register.html">Register
                         <!-- <span class="sr-only">(current)</span> -->
                     </a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" id="login" onclick="logout()" href="#">Login</a>
+                    <a class="nav-link" id="login" href="form.html">Login</a>
+                    
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Library</a>
+                    <a class="nav-link" href="">Library</a>
                 </li>
 
                 <li class="nav-item dropdown active">
@@ -81,6 +82,22 @@
             </div>
           </div>
           <br>
+          
+
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCl_ZtLSpTHhmttot6Tuxt2S9b7w12_91Y",
+    authDomain: "teachsci-606a0.firebaseapp.com",
+    databaseURL: "https://teachsci-606a0.firebaseio.com",
+    projectId: "teachsci-606a0",
+    storageBucket: "teachsci-606a0.appspot.com",
+    messagingSenderId: "1043251293223"
+  };
+  firebase.initializeApp(config);
+</script>
+<br>
     <footer>
             <p>Copyright&copy; 2018</p>
           </footer>
